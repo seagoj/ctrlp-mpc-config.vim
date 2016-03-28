@@ -1,0 +1,9 @@
+Execute (Check for mpc extension loaded):
+  let mapleader = ','
+  AssertNotEqual index(g:ctrlp_extensions, 'mpc'), -1
+
+Do (Open mpc buffer):
+  ,m
+
+Expect (new buffer opened):
+  > mpd error: Connection refused
